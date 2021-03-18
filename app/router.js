@@ -10,4 +10,5 @@ Router.map(function () {
   this.route('pokemon', function() {
     this.route('mudkip');
   });
+  this.route('item', {path: '/item/:item_id'});
 });
