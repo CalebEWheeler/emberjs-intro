@@ -9,4 +9,13 @@ export default class ProductComponent extends Component {
   addNumber() {
     this.number = this.number + 1;
   }
+
+  @action
+  subtractNumber() {
+    if (this.number === 0) {
+      this.number = 0;
+    } else {
+      this.number = this.number - 1;
+    }
+  }
 }
