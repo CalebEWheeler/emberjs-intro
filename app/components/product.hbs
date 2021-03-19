@@ -1,7 +1,12 @@
-<h1>Number: {{this.number}}</h1>
+{{!-- <h1>Number: {{this.number}}</h1>
 <button {{on "click" this.addNumber}}>Add</button>
-<button {{on "click" this.subtractNumber}}>Remove</button>
+<button {{on "click" this.subtractNumber}}>Remove</button> --}}
 
-<LinkTo @route="item" @model="1" class="product">
-<Product::Image/>  
+{{!-- refactor to pass in the productImage as the image src prop, and add Product::Details component to display the product information and also pass in the product name as 'name' and product price as 'price'. --}}
+<LinkTo @route="item" @model={{@product.id}} class="product">
+<Product::Image @src={{this.productImage}}/> 
+<Product::Details
+  @name={{@product.name}}
+  @price={{@product.price}}
+/>
 </LinkTo>

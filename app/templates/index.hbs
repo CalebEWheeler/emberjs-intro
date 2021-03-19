@@ -1,4 +1,6 @@
 <GeneralContainer>
-  <Product />
-  <Product />
+  {{!-- refactor to utilize each helper to create a Product component with unique product information passed to each existing Product... --}}
+  {{#each this.model as |product|}}
+    <Product @product={{product}}/>
+  {{/each}}
 </GeneralContainer>
