@@ -5,12 +5,12 @@ A short introduction of this app could easily go here.
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+You will need the following things properly installed on your computer. To check if they are installed, type the line following the '$' into your terminal.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+* [Git](https://git-scm.com/) - $ git version
+* [Node.js](https://nodejs.org/) (with npm) - $ node -v   $ npm -v
+* [Ember CLI](https://ember-cli.com/) - $ ember -v
+* [Google Chrome](https://google.com/chrome/) - if on MACOS $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
 
 ## Installation
 
