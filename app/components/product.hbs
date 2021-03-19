@@ -3,5 +3,5 @@
 <button {{on "click" this.subtractNumber}}>Remove</button>
 
 <LinkTo @route="item" @model="1" class="product">
-<Product::Image/>  
+<Product::Image @src={{this.productImage}}/>  
 </LinkTo>
