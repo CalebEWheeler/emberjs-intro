@@ -1,10 +1,12 @@
 import Controller from '@ember/controller';
+import { inject as service } from '@ember/service';
 
 export default class CartController extends Controller {
   //original default values to pass from controller to view
   // subtotal = 0;
   // tax = 0;
   // total = 0;
+  @service('shopping-cart') cart;
 
   //create getters for each model property
   get subtotal() {
