@@ -1,0 +1,8 @@
+<div class="grid-item">
+  {{!-- In 'gif-container' component I have passed in the 'image' and 'title' props from the parent component and are passing them into the 'Image' and 'Title' subcomponents as properties so they are accessible. --}}
+  <GifContainer::Image 
+  @src={{@image}} 
+  @rating={{@rating}}
+  />
+  {{!-- <GifContainer::Title @title={{@title}} /> --}}
+</div>

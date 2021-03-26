@@ -1,2 +1,16 @@
 {{page-title "Trending"}}
-{{outlet}}
+<label for="selectRating">Select Rating:</label>
+  <select name="selectRating" id="">
+    <option value="g">G</option>
+    <option value="pg">PG</option>
+    <option value="pg-13">PG-13</option>
+    <option value="r">R</option>
+  </select>
+<GeneralContainer>
+  {{#each this.model as |gif|}}
+  <GifContainer 
+  @image={{gif.images.downsized.url}}
+  @rating={{gif.rating}}
+  />
+  {{/each}}
+</GeneralContainer>
