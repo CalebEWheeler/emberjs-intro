@@ -1,12 +1,17 @@
 {{page-title "Trending"}}
-<label for="selectRating">Select Rating:</label>
+<GeneralContainer>
+  <label for="selectRating">Select Rating:</label>
   <select name="selectRating" id="">
     <option value="g">G</option>
     <option value="pg">PG</option>
     <option value="pg-13">PG-13</option>
     <option value="r">R</option>
   </select>
-<GeneralContainer>
+  <div class="d-flex">
+    <button type="button" class="m-3" {{on 'click' this.decrement}}>-</button>
+    <p class="my-3">{{this.number}}</p>
+    <button type="button" class="m-3" {{on 'click' this.increment}}>+</button>
+  </div>
   {{#each this.model as |gif|}}
   <GifContainer 
   @image={{gif.images.downsized.url}}
