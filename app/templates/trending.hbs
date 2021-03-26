@@ -2,10 +2,14 @@
 <GeneralContainer>
   <label for="selectRating">Select Rating:</label>
   <select name="selectRating" id="">
+    {{#each this.selectValues as |selectValue|}}
+    <option value={{selectValue}}>{{selectValue}}</option>
+    {{/each}}
+    {{!-- <option selected disabled>{{this.selectRating}}</option>
     <option value="g">G</option>
     <option value="pg">PG</option>
     <option value="pg-13">PG-13</option>
-    <option value="r">R</option>
+    <option value="r">R</option> --}}
   </select>
   <div class="d-flex">
     <button type="button" class="m-3" {{on 'click' this.decrement}}>-</button>

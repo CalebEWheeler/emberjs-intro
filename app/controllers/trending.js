@@ -4,6 +4,10 @@ import { action } from '@ember/object';
 
 export default class TrendingController extends Controller {
 
+  selectValues = ["G", "PG", "PG-13", "R"];
+
+  @tracked selectRating = 'G';
+
   @tracked number = 0;
 
   @action
